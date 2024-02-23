@@ -6,21 +6,21 @@
 /* config */
 
 * {
-  --animation-speed: 0.2s;
-  --button-corner-rounding: 30px;
-  --urlbar-container-height: 40px !important;
+  --animation-speed: 0.3s;
+  --button-corner-rounding: 35px;
+  --urlbar-container-height: 30px !important;
   --urlbar-min-height: 30px !important;
   --urlbar-height: 30px !important;
   --urlbar-toolbar-height: 38px !important;
   --moz-hidden-unscrollable: scroll !important;
-  --toolbarbutton-border-radius: 3px !important;
+  --toolbarbutton-border-radius: 15px !important;
   --tabs-border-color: transparent;
 }
 
 :root {
     --window: -moz-Dialog !important;
     --secondary: color-mix(in srgb, currentColor 5%, -moz-Dialog) !important;
-    --uc-border-radius: 0px;
+    --uc-border-radius: 25px;
     --uc-status-panel-spacing: 0px;
     --uc-page-action-margin: 7px;
 }
@@ -28,10 +28,10 @@
 /* animation and effect */
 #nav-bar:not([customizing]) {
   visibility: visible;
-  margin-top: -40px;
+  // margin-top: -40px;
   transition-delay: 0.1s;
   filter: alpha(opacity=0);
-  opacity: 0;
+  opacity: 1;
   transition: visibility, ease 0.1s, margin-top, ease 0.1s, opacity, ease 0.1s,
   rotate, ease 0.1s !important;
 }
@@ -80,8 +80,8 @@
 #tabbrowser-tabs{border-inline-start-width: 0!important}
 
 /*  Makes some buttons nicer  */
-#PanelUI-menu-button, #unified-extensions-button, #reload-button, #stop-button {padding: 2px !important}
-#reload-button, #stop-button{margin: 1px !important;}
+#PanelUI-menu-button, #unified-extensions-button, #reload-button, #stop-button {padding: 3px !important}
+#reload-button, #stop-button{margin: 2px !important;}
 
 /* X-button */
 :root {
@@ -98,9 +98,9 @@
 .tab-secondary-label { display: none !important; }
 
 :root {
-  --toolbarbutton-border-radius: 0 !important;
-  --tab-border-radius: 0 !important;
-  --tab-block-margin: 0 !important;
+  --toolbarbutton-border-radius: 25px !important;
+  --tab-border-radius: 25px !important;
+  --tab-block-margin: 4px !important;
 }
 
 .tabbrowser-tab:is([visuallyselected='true'], [multiselected])
@@ -112,6 +112,7 @@
 .tab-background {
   border-right: 0px solid rgba(0, 0, 0, 0) !important;
   margin-left: -1px !important;
+  width: 100% !important;
 }
 
 .tabbrowser-tab[last-visible-tab='true'] {

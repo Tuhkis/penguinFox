@@ -101,7 +101,7 @@ user_pref("geo.provider.use_geoclue", false); // [FF102+] [LINUX]
 
 /*** disable search suggest ***/
 //user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
-//user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 
 /*** disable autofill ***/
 //user_pref("browser.formfill.enable", false);
